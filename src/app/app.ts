@@ -26,7 +26,7 @@ import {Password} from "./components/password/password";
   {path: '/Password', component: Password, name: 'Password'}
 ])
 export class App {
-  url: string = 'https://github.com/preboot/angular2-webpack';
+  url: string = 'www.viettangle.com';
 
   constructor(public api: Api) {
   }
