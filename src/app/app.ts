@@ -26,8 +26,8 @@ import {Password} from "./components/password/password";
   {path: '/Password', component: Password, name: 'Password'}
 ])
 export class App {
-  url: string = 'www.viettangle.com';
+    url: string = 'www.viettangle.com';
+    constructor(public api: Api) {
 
-  constructor(public api: Api) {
-  }
+    }
 }

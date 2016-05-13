@@ -14,6 +14,7 @@ export class Password implements OnInit {
 
   constructor() {
     // Do stuff
+    console.log("password constructor");
   }
 
   public alerts:Array<Object> = [

@@ -1,19 +1,27 @@
-<header>
-  <nav>
-    <a [routerLink]="['Home']">Home</a>
-    <a [routerLink]="['About']">About</a>
-    <a [routerLink]="['Password']">Password</a>
-  </nav>
-</header>
-<main>
-<!--
-  <h1 class="title">Hello from {{api.title}} !</h1>
+<div class="container">
+  <div class="row">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <a class="navbar-brand" [routerLink]="['Home']"><span class="glyphicon glyphicon-home"></span></a>
 
-  Images (and assets) are parsed and loaded from within the public directory
-  <img src="/img/shield-with-beta.png">
--->
-  <router-outlet></router-outlet>
-</main>
-<footer>
-  <a href="{{ url }}">viettangle.com</a>
-</footer>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a [routerLink]="['Home']"><span class="glyphicon glyphicon-wrench"></span> Home</a></li>
+          <li><a [routerLink]="['About']">About</a></li>
+          <li><a [routerLink]="['Password']">Password</a></li>
+        </ul>
+    </nav>
+    <main>
+    <!--
+      <h1 class="title">Hello from {{api.title}} !</h1>
+
+      Images (and assets) are parsed and loaded from within the public directory
+      <img src="/img/shield-with-beta.png">
+    -->
+      <router-outlet></router-outlet>
+    </main>
+    <footer>
+      <a href="{{ url }}">viettangle.com</a>
+    </footer>
+  </div>
+</div>
